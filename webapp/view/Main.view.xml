@@ -1,0 +1,16 @@
+<mvc:View
+	xmlns:form="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns="sap.m"
+	height="100%"
+	controllerName="sap.m.sample.DatePicker.controller.Main">
+	<Page title="DatePicker sample">
+		<form:SimpleForm editable="true">
+			<Label text="DatePicker" />
+			<DatePicker value="{ path: '/begda', type: 'sap.ui.model.type.Date', formatOptions: { UTC: true, pattern: 'dd.MM.yyyy' } }" />
+			<Label text="DatePicker value" />
+			<TextArea value="{ path: '/begda', formatter: '.sBegdaJSON' }" />
+		</form:SimpleForm>
+	</Page>
+</mvc:View>
